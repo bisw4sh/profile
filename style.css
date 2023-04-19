@@ -1,114 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+  height: 100%;
+  overflow: hidden;
+
+}
+
 body{
-  margin: 0;
-  padding: 0;
+
+  min-height: 100vh;
   background-image: url(luffy.png), url(naruto.png), linear-gradient(270deg, rgba(255, 118, 6, 1), rgba(0, 0, 0, 1));
   background-repeat: no-repeat;
-  background-attachment: absolute;
   background-position: bottom left, bottom right;
   background-size: contain, contain;
   background-blend-mode: soft-light;
-  overflow: hidden;
-  /* overflow-y: hidden; */
-}
-li, a, button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
 }
 
 header{
-  background-color: rgb(81, 7, 131);
-  border-radius: 15px;
-  position: absolute;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row; */
+  color: gray;
+  background-color: #091a3286;;
+  top: 0px;
+  left: 0px;
   padding: 0;
+
+}
+
+.nav__links{
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+
 }
 
 .nav__links li{
+  margin: 1px;
   list-style: none;
-}
-
-.nav__links li a{
-  transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover{
-  color: #0088a9;
-}
-
-button{
-  padding: 9px 25px;
-  background-color: rgb(81, 7, 131);
-  border: none;
-  border-radius: 40px;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
 }
 
-button:hover{
-  background-color: rgba(0,136,169,0.8);
+.nav__links li img{
+  height: 3rem;
+}
+
+.nav__links li:hover{
+  filter: drop-shadow(1rem 1rem 1rem rgb(166, 2, 255));
+  transform: scale(1.5);
+}
+
+.nav__links li img:hover{
+
+  transform: rotate(360deg);
+  transition: transform 500ms 100ms ease-in-out;
+
 }
 
 .box{
-  height: 600px;
   width: 450px;
+  height: 620px;
+  border-radius: 1rem;
   background:#091A32;
   opacity: 0.9;
-  padding: 40px;
+  padding: 10px;
   text-align: center;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
   color: gray;
   font-family: 'Century Gothic',sans-serif;
   background-attachment: fixed;
 }
+
 .box-img{
   width: 200px;
 }
+
 .box-img:hover{
 filter: drop-shadow(1rem 1rem 1rem purple);
 }
+
 .box h1{
   font-size: 40px;
   letter-spacing: 4px;
   font-weight: 100;
 }
+
 .box h5{
   font-size: 20px;
   letter-spacing: 3px;
   font-weight: 100;
 }
+
 .box p{
-  text-align: centre;
+  text-align: center;
 }
-ul{
-  margin: 0;
-  padding: 0;
-}
+
 .box li{
   display: inline-block;
   margin: 6px;
+  padding: 8px;
   list-style: none;
 }
+
 .box li a{
   color:rgb(228, 39, 39);
   text-decoration: none;
   font-size: 60px;
   transition: all ease-in-out 250ms;
 }
+
 .box li a:hover{
   color:#ffffff;
-}
-
-.copyright{
-  color: rgb(255, 0, 255);
-  font-family: 'Century Gothic',sans-serif;
-  font-size: 20px;
 }
