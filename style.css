@@ -46,6 +46,7 @@ header{
 }
 
 .nav__links li img{
+  transform : rotateZ(20deg);
   height: 3rem;
 }
 
