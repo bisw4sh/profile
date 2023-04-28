@@ -10,7 +10,35 @@ html{
   overflow: hidden;
 
 }
+:root{
+  --track-color: rgba(240, 88, 0, 0.785);
+  --thumb-color: #d74ff6;
+  --thumb-hover-color: #383434;
 
+}
+
+
+::-webkit-scrollbar{
+  width: 8px;
+  margin-right: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--track-color) ;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--thumb-color);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--thumb-hover-color);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
 body{
 
   min-height: 100vh;
@@ -59,7 +87,6 @@ header{
 
   transform: rotate(360deg);
   transition: transform 500ms 100ms ease-in-out;
-
 }
 
 .box{
@@ -80,6 +107,24 @@ header{
   color: gray;
   font-family: 'Century Gothic',sans-serif;
   background-attachment: fixed;
+
+}
+
+@media only screen and (max-width: 450px) {
+  html{
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .box {
+    max-width: 300px;
+  }
+  .nav__links li img{
+    display: none;
+  }
+  .nav__links li:hover{
+    color:purple;
+    transform: scale(1);
+  }
 }
 
 .box-img{
